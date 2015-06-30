@@ -73,10 +73,18 @@ public class BinarySearchTree {
 				print(list);
 			else
 			{
-				count ++;
-				printAllPathWithSum(node.left, sum-node.data, list);
-				printAllPathWithSum(node.right, sum-node.data, list);
-				count --;
+				if(node.left == null && node.right == null)
+				{
+					int index = list.lastIndexOf(node.data);
+					list.remove(index);
+				}
+				else
+				{
+					count++;
+					printAllPathWithSum(node.left, sum - node.data, list);
+					printAllPathWithSum(node.right, sum - node.data, list);
+					count--;
+				}
 			}
 		}
 		if(count != 0)
