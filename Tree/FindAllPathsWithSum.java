@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+ * Find out all the paths in tree where sum of value of nodes individual path is certain sum
+ */
 
 class Node
 {
@@ -14,12 +16,12 @@ class Node
 		right = null;
 	}
 }
-public class BinarySearchTree {
+public class FindAllPathsWithSum {
 	Node root;
 	int sum = 0;
 	int count =0;
 	boolean flag = false;
-	public BinarySearchTree() {
+	public FindAllPathsWithSum() {
 		root = null;
 	}
 	
@@ -104,7 +106,7 @@ public class BinarySearchTree {
 	}
 
 	public static void main(String[] args) {
-		BinarySearchTree bst = new BinarySearchTree();
+		FindAllPathsWithSum bst = new FindAllPathsWithSum();
 		int[] input={50,25,75,10,35,60,100,5,20,30,45,55,70,90,102};//{1, 2, 3, 4, 5, 10, 11, 6, 7, 8, 9, 12, 13, 14, 15};
 		for(int i:input)
 			bst.insert(bst.getRoot(), i);
