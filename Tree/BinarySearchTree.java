@@ -60,10 +60,7 @@ public class BinarySearchTree {
 
 	public void printAllPathWithSum(Node node, int sum, ArrayList<Integer> list)
 	{
-//		if(!list.isEmpty() && flag)
-//			return;
-//		if(node != null && list.isEmpty())
-//			flag= false;
+
 		if(node == null)
 			return;
 		if(node.data<=sum)
@@ -92,8 +89,8 @@ public class BinarySearchTree {
 		
 			
 		printAllPathWithSum(node.left, this.sum, new ArrayList());
-		if(count != 0)
-			return;
+		//if(count != 0)
+		//	return;
 		printAllPathWithSum(node.right, this.sum, new ArrayList());
 		
 
