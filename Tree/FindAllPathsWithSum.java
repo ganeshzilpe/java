@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 /*
  * Find out all the paths in tree where sum of value of nodes individual path is certain sum
+ * Negative data for nodes are not handled
  */
 
 class Node
