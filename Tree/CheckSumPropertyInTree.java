@@ -5,23 +5,23 @@
  * child. 
  * 
  * Tree 1:
- * 							10
- * 						/		 \
- * 						8		  2
- * 					  /	  \     /  
- * 					 3     5   2
- * 			This tree follows sum property
+ * 						 10
+ * 					      /	     \
+ * 					    8	       2
+ * 					  /   \      /  
+ * 					 3     5    2
+ * 			             This tree follows sum property
  * 
  * * Tree 2:
- * 							10
- * 						/		 \
- * 						8		  2
- * 					  /	  \     /   \
+ * 						 10
+ * 					      /      \
+ * 					    8	      2
+ * 					   /  \     /   \
  * 					 3     5   2     1
- * 			This tree does not follows sum property as 2 != 2 + 1
+ * 			   This tree does not follows sum property as 2 != 2 + 1
  */
 public class CheckSumPropertyInTree {
-
+ 
 	Node root;
 	
 	public CheckSumPropertyInTree() {
@@ -76,7 +76,7 @@ public class CheckSumPropertyInTree {
 	}
 	
 }
-/*
+
 class Node
 {
 	int data;
@@ -88,4 +88,4 @@ class Node
 		right = null;
 	}
 	
-}*/
+}
